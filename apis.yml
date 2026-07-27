@@ -1,8 +1,19 @@
 aid: fomo
 name: fomo
-description: 'fomo is a company surfaced as a portfolio company of index-ventures, union-square-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: fintech. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: >-
+  fomo (FOMO Labs Inc.) is a social-first cryptocurrency trading platform available as a
+  mobile app and web platform. It lets mainstream retail investors trade memecoins, altcoins,
+  and stablecoins across multiple blockchains without managing wallets, paying gas fees, or
+  transferring assets manually, wrapping on-chain trading in a social layer where users
+  discover tokens, follow top traders, view real-time buy alerts, copy trades, and compete on
+  leaderboards. Onboarding is quick with Apple Pay funding, and trading is multichain and
+  gasless. Founded in 2025 by former Deutsche Bank and dYdX team members (CEO Paul Erlanger,
+  Se Yong Park, Prashan Dharmasena), the New York company reports 500,000+ active traders,
+  625,000+ total users, and $4B+ in trading volume. In June 2026 it raised a $75M Series B led
+  by Index Ventures with Union Square Ventures and Benchmark at a $550M valuation. fomo is a
+  consumer-facing product and does not publish a public developer API, SDKs, or API
+  documentation; this API Evangelist profile captures its company identity and domain-security
+  posture.
 url: https://raw.githubusercontent.com/api-evangelist/fomo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +22,30 @@ x-backed-by:
 - union-square-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://fomo.family/images/og-image.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Fintech
+- Cryptocurrency
+- Trading
+- Social Trading
+- Web3
+- Blockchain
+- Mobile
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +53,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/fomo-domain-security.yml
 - type: Website
-  url: http://fomo.family
+  url: https://fomo.family
+- type: Blog
+  url: https://fomo.family/blog
+- type: Support
+  url: https://fomo.family/answers
+- type: PrivacyPolicy
+  url: https://fomo.family/privacy-policy
+- type: TermsOfService
+  url: https://fomo.family/terms
+- type: SignUp
+  url: https://apps.apple.com/us/app/fomo-never-miss-out/id6741115427
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

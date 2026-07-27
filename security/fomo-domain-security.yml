@@ -1,0 +1,16 @@
+generated: '2026-07-19'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: fomo.family
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 27 23:27:30 2026 GMT
+  hsts: false
+domains:
+- domain: fomo.family
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
